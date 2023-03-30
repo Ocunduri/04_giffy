@@ -14,6 +14,6 @@ export default function getGifs({ keyword = 'naruto' } = {}) {
             })
 
             return gifs
-
+            
         })
 }
