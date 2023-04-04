@@ -1,44 +1,36 @@
-.App {
-  text-align: center;
-}
-
 
 .App-content {
-  background-color: #282c34;
+  background-color: rgb(15, 209, 209);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-content a{
-  color: white;
   text-decoration: none;
   padding: 20px;
+  font-size: xx-large;
+  font-weight: bold;
+  color: blueviolet;
+  
 }
 
-.App-content a h1:hover{
-  cursor: pointer;
+.App-title{
+  color: blueviolet;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-.App-content nav{
-  width: 100%;
-  background-color: white;
-  padding: 10px;
+
+.App-navbar{
   display: flex;
-  justify-content: space-around;
-  column-gap: 5px;
+  min-width: 100vh;
+  flex-direction: column;
 }
 
-.App-content nav a{
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
+
+
+
 
 

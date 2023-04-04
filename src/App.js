@@ -13,7 +13,7 @@ function App() {
 
       <section className="App-content">
 
-        <Link to='/'>
+        <Link to='/' className='App-header'>
           Giffy
         </Link>
 

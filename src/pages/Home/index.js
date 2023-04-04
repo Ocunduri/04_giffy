@@ -1,16 +1,23 @@
 import React from "react";
-import {Link} from 'wouter'
+import { Link } from 'wouter'
+
+const POPULAR_GIFTS = ['Matrix', 'Ecuador', 'Chile', 'Argentina']
 
 export default function Home() {
     return (
-        <>
-            <h3>Los gifs más populares</h3>
-
+        <div className="App-navbar">
+            <h3 className="App-title">Los gifs más populares</h3>
             <nav>
-                <Link to='/search/panda'>Gifs de pandas</Link>
-                <Link to='/search/ecuador'>Gifs de ecuador</Link>
-                <Link to='/search/argentina'>Gifs de argentina</Link>
+                <ul>
+                    {
+                        POPULAR_GIFTS.map((popularGif) => (
+                            <li key={popularGif}>
+                                <Link to={`/search/${popularGif}`}>Gifs de {popularGif}</Link>
+                            </li>
+                        ))
+                    }
+                </ul>
             </nav>
-        </>
+        </div>
     )
 }
