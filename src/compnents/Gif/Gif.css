@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Gif a{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0px;
+    position: relative;
+}
+
+.Gif h4{
+    margin: 0;
+    position: absolute;
+    background-color: gray;
+    bottom: 0;
+}
+
+.Gif img{
+    object-fit: cover;
+}

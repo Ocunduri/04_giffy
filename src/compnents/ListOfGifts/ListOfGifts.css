@@ -1,0 +1,20 @@
+.ListContainer {
+    width: 100%;
+    column-count: 1;
+}
+
+.ListContainer > div{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 320px) {
+    .ListContainer{
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .ListContainer{
+        column-count: 3;
+    }
+}

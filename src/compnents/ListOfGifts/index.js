@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Gif from "./Gif";
-import getGifs from "../services/getGifs";
+import Gif from "../Gif";
+import getGifs from "../../services/getGifs";
 
-export default function ListOfGifts({ params }) {
+import './ListOfGifts.css'
 
-    const { keyword } = params
+export default function ListOfGifts({ keyword }) {
     
     const [loading, setLoading] = useState(false)
 
@@ -20,7 +20,7 @@ export default function ListOfGifts({ params }) {
 
     if(loading) return <h4>Loading content...</h4>
 
-    return <div>
+    return <div className="ListContainer">
         {
             gifs.map(({ id, title, url }) =>
                 <Gif key={id} title={title} id={id} url={url} />
