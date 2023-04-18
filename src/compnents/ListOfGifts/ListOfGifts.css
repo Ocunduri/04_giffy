@@ -1,10 +1,11 @@
-.ListContainer {
-    width: 100%;
-    column-count: 1;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.ListContainer > div{
-    margin-bottom: 1rem;
+.ListContainer {
+    column-count: 1;
 }
 
 @media (min-width: 320px) {

@@ -4,6 +4,7 @@ import { Link } from 'wouter'
 const POPULAR_GIFTS = ['Matrix', 'Ecuador', 'Chile', 'Argentina']
 
 export default function Home() {
+
     return (
         <div className="App-navbar">
             <h3 className="App-title">Los gifs más populares</h3>
